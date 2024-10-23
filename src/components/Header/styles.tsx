@@ -2,20 +2,12 @@ import styled from 'styled-components'
 import { colors, media } from 'styles/variablesCss'
 
 export const HeaderContainer = styled.header`
+  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: center;
   padding: var(${media.globalPadding});
   padding-top: 32px;
   padding-bottom: 32px;
-
-  img.icon-mobile {
-    display: none;
-
-    @media (max-width: 768px) {
-      display: block;
-    }
-  }
 
   @media (max-width: 768px) {
     padding-top: 16px;
@@ -24,6 +16,22 @@ export const HeaderContainer = styled.header`
     button {
       width: 132px;
       height: 40px;
+    }
+  }
+`
+
+export const HeaderContent = styled.div`
+  max-width: 1440px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  img.icon-mobile {
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
     }
   }
 `
