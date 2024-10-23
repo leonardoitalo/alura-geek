@@ -1,5 +1,7 @@
 export const media = {
   globalPadding: '--global-padding',
+  tablet: '766px',
+  desktop: '1440px',
 }
 
 export const colors = {

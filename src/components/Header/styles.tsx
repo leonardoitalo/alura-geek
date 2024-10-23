@@ -9,7 +9,7 @@ export const HeaderContainer = styled.header`
   padding-top: 32px;
   padding-bottom: 32px;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${media.tablet}) {
     padding-top: 16px;
     padding-bottom: 16px;
 
@@ -30,7 +30,7 @@ export const HeaderContent = styled.div`
   img.icon-mobile {
     display: none;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${media.tablet}) {
       display: block;
     }
   }
@@ -44,7 +44,7 @@ export const HeaderSearchContainer = styled.div`
   img.logo-desktop {
     display: block;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${media.tablet}) {
       display: none;
     }
   }
@@ -52,7 +52,7 @@ export const HeaderSearchContainer = styled.div`
   img.logo-mobile {
     display: none;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${media.tablet}) {
       display: block;
     }
   }
@@ -70,7 +70,7 @@ export const InputGroup = styled.div`
     font-size: 14px;
     font-weight: 400;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${media.tablet}) {
       display: none;
     }
   }
@@ -78,7 +78,7 @@ export const InputGroup = styled.div`
   img.icon-desktop {
     display: block;
 
-    @media (max-width: 768px) {
+    @media (max-width: ${media.tablet}) {
       display: none;
     }
   }
